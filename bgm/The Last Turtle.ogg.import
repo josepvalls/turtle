@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The Last Turtle.ogg-1a15ef2a7c0af930acaa5648d4a9571c.oggstr"
+
+[deps]
+
+source_file="res://bgm/The Last Turtle.ogg"
+dest_files=[ "res://.import/The Last Turtle.ogg-1a15ef2a7c0af930acaa5648d4a9571c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

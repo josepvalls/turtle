@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sea Turtle_s Retribution.ogg-3488e1064ccaa3902274c17861cf48a9.oggstr"
+
+[deps]
+
+source_file="res://bgm/Sea Turtle_s Retribution.ogg"
+dest_files=[ "res://.import/Sea Turtle_s Retribution.ogg-3488e1064ccaa3902274c17861cf48a9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
