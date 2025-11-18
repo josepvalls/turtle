@@ -1,0 +1,6 @@
+.import/
+.idea/
+.DS_Store
+exports/
+Exports/
+export.cfg
