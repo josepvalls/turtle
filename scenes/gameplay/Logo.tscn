@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://title.png" type="Texture" id=2]
+[ext_resource path="res://sprites/craftpix/craftpix-net-724983-ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/2.png" type="Texture" id=3]
+[ext_resource path="res://sprites/craftpix/craftpix-net-724983-ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/1.png" type="Texture" id=5]
+[ext_resource path="res://sprites/craftpix/craftpix-net-724983-ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/3.png" type="Texture" id=6]
+
+[node name="Title" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+margin_top = -29.0
+margin_right = 728.0
+margin_bottom = 80.0
+color = Color( 0.392157, 0.643137, 0.92549, 1 )
+
+[node name="1" type="Sprite" parent="Node2D"]
+position = Vector2( 0, 72 )
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="2" type="Sprite" parent="Node2D"]
+position = Vector2( -16, 72 )
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = 100
+offset = Vector2( 0, 72 )
+scale = Vector2( 1.25, 1.25 )
+transform = Transform2D( 1.25, 0, 0, 1.25, 0, 72 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.25, 0.25 )
+motion_mirroring = Vector2( 576, 0 )
+
+[node name="3" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2( -230.4, 0 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Title" type="Sprite" parent="."]
+position = Vector2( 0, 128 )
+texture = ExtResource( 2 )
+centered = false

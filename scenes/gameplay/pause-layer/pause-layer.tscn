@@ -1,0 +1,143 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/common/VBoxSoundSettings.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/gameplay/pause-layer/pause-layer.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui-theme.tres" type="Theme" id=3]
+[ext_resource path="res://assets/Pentagon Filled.png" type="Texture" id=4]
+
+[node name="PauseLayer" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 2 )
+
+[node name="PressESCToOpenMenu" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -244.5
+margin_top = 24.0
+margin_right = 244.5
+margin_bottom = 38.0
+theme = ExtResource( 3 )
+custom_colors/font_color = Color( 0.788235, 0.788235, 0.788235, 1 )
+text = "Pause: ESC (keyboard) or START button (joypad)"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 634.0
+margin_right = 214.0
+margin_bottom = 698.0
+rect_min_size = Vector2( 64, 64 )
+rect_rotation = 30.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="PauseButton" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -1147.0
+margin_top = 661.0
+margin_right = -1090.0
+margin_bottom = 698.0
+text = "Pause"
+
+[node name="Pause" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="Pause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.501961 )
+
+[node name="TextureRect" type="TextureRect" parent="Pause/ColorRect"]
+modulate = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+margin_left = 600.0
+margin_top = 265.0
+margin_right = 856.0
+margin_bottom = 521.0
+rect_min_size = Vector2( 256, 256 )
+rect_rotation = 30.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="TextureRect2" type="TextureRect" parent="Pause/ColorRect"]
+modulate = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+margin_left = 463.0
+margin_top = 198.0
+margin_right = 719.0
+margin_bottom = 454.0
+rect_min_size = Vector2( 256, 256 )
+rect_rotation = -27.2
+texture = ExtResource( 4 )
+expand = true
+
+[node name="TextureRect3" type="TextureRect" parent="Pause/ColorRect"]
+margin_left = 610.0
+margin_top = 174.0
+margin_right = 690.0
+margin_bottom = 254.0
+rect_min_size = Vector2( 80, 80 )
+rect_rotation = 12.6384
+texture = ExtResource( 4 )
+expand = true
+
+[node name="TextureRect4" type="TextureRect" parent="Pause/ColorRect"]
+margin_left = 548.0
+margin_top = 469.0
+margin_right = 676.0
+margin_bottom = 597.0
+rect_min_size = Vector2( 128, 128 )
+rect_rotation = -33.0384
+texture = ExtResource( 4 )
+expand = true
+
+[node name="CenterContainer" type="CenterContainer" parent="Pause/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Pause/ColorRect/CenterContainer"]
+margin_left = 520.0
+margin_top = 177.0
+margin_right = 760.0
+margin_bottom = 542.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Pause/ColorRect/CenterContainer/MarginContainer"]
+margin_right = 240.0
+margin_bottom = 365.0
+custom_constants/margin_right = 32
+custom_constants/margin_top = 32
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+
+[node name="VBoxOptions" type="VBoxContainer" parent="Pause/ColorRect/CenterContainer/MarginContainer/MarginContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 208.0
+margin_bottom = 333.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="Resume" type="Button" parent="Pause/ColorRect/CenterContainer/MarginContainer/MarginContainer/VBoxOptions"]
+unique_name_in_owner = true
+margin_right = 176.0
+margin_bottom = 37.0
+text = "Resume"
+
+[node name="VBoxSoundSettings" parent="Pause/ColorRect/CenterContainer/MarginContainer/MarginContainer/VBoxOptions" instance=ExtResource( 1 )]
+margin_top = 57.0
+margin_right = 176.0
+margin_bottom = 217.0
+rect_min_size = Vector2( 176, 0 )
+
+[node name="Main Menu" type="Button" parent="Pause/ColorRect/CenterContainer/MarginContainer/MarginContainer/VBoxOptions"]
+unique_name_in_owner = true
+margin_top = 237.0
+margin_right = 176.0
+margin_bottom = 301.0
+text = "Return to
+main menu"
+
+[connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
+[connection signal="pressed" from="Pause/ColorRect/CenterContainer/MarginContainer/MarginContainer/VBoxOptions/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="Pause/ColorRect/CenterContainer/MarginContainer/MarginContainer/VBoxOptions/Main Menu" to="." method="_on_Main_Menu_pressed"]

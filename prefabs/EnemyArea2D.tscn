@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://sprites/craftpix/Abovewater enemies/drone1/Idle.png" type="Texture" id=1]
+[ext_resource path="res://prefabs/EnemyArea2D.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=134]
+radius = 15.0
+
+[sub_resource type="AtlasTexture" id=104]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=105]
+atlas = ExtResource( 1 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=106]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=107]
+atlas = ExtResource( 1 )
+region = Rect2( 144, 0, 48, 48 )
+
+[sub_resource type="SpriteFrames" id=108]
+animations = [ {
+"frames": [ SubResource( 104 ), SubResource( 105 ), SubResource( 106 ), SubResource( 107 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="EnemyArea2D" type="Area2D"]
+position = Vector2( 511, -480 )
+collision_layer = 32
+collision_mask = 8
+script = ExtResource( 2 )
+hit_jitter = 0
+hit_impact = 0
+fire_cooldown = 1.75
+health = 1
+staggered_time_on_hit = 0.0
+staggered_time_on_shot = 0.0
+move_speed = 150
+size = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 134 )
+
+[node name="Gun" type="Node2D" parent="."]
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 108 )
+playing = true
+flip_h = true
+
+[node name="SpriteHit" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+frames = SubResource( 108 )
+playing = true
+flip_h = true
