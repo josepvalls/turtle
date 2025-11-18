@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://prefabs/ProjectileArea2D.gd" type="Script" id=1]
+[ext_resource path="res://prefabs/Projectile.gd" type="Script" id=2]
+[ext_resource path="res://sprites/shapes/hex-circle-blurry-small.png" type="Texture" id=3]
+[ext_resource path="res://sprites/craftpix/craftpix-net-626011-free-guns-pack-2-for-main-characters-pixel-art/5 Bullets/6.png" type="Texture" id=4]
+[ext_resource path="res://sprites/circle.png" type="Texture" id=5]
+
+[sub_resource type="CapsuleShape2D" id=105]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="Gradient" id=102]
+offsets = PoolRealArray( 0.109677, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=104]
+gradient = SubResource( 102 )
+width = 16
+
+[sub_resource type="ParticlesMaterial" id=103]
+flag_disable_z = true
+spread = 20.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 200.0
+initial_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 360.0
+angle_random = 1.0
+color = Color( 0.823529, 0.184314, 0.117647, 1 )
+color_ramp = SubResource( 104 )
+
+[node name="Projectile" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ProjectileArea2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 5
+monitoring = false
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ProjectileArea2D"]
+rotation = 1.5708
+shape = SubResource( 105 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+emitting = false
+amount = 5
+lifetime = 0.15
+one_shot = true
+explosiveness = 0.8
+local_coords = false
+process_material = SubResource( 103 )
+texture = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+
+[node name="Hex-circle-blurry-small" type="Sprite" parent="Sprite"]
+modulate = Color( 0.968627, 0.843137, 0.137255, 1 )
+show_behind_parent = true
+position = Vector2( 3.8147e-06, 4.76837e-07 )
+scale = Vector2( 0.2, 0.1 )
+texture = ExtResource( 3 )
