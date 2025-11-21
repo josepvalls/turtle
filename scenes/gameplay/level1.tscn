@@ -1971,7 +1971,7 @@ random_speed = 0.7
 move_while_inactive = false
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 512, 48 )
+position = Vector2( -256, 64 )
 collision_layer = 2
 collision_mask = 5
 script = ExtResource( 2 )
