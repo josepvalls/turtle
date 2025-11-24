@@ -97,4 +97,5 @@ func _on_Area2D_body_entered(body):
 	emit_signal("splash",self,speed)
 
 func _on_Area2D_mouse_entered():
+	#prints("_on_Area2D_mouse_entered")
 	emit_signal("splash",self,10)

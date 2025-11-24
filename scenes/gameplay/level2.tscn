@@ -1,4 +1,4 @@
-[gd_scene load_steps=199 format=2]
+[gd_scene load_steps=203 format=2]
 
 [ext_resource path="res://sprites/craftpix/craftpix-net-800891-octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Death.png" type="Texture" id=1]
 [ext_resource path="res://sprites/craftpix/craftpix-net-800891-octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Walk.png" type="Texture" id=2]
@@ -316,14 +316,14 @@ font_data = ExtResource( 22 )
 [sub_resource type="Gradient" id=171]
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
-[sub_resource type="GradientTexture" id=93]
+[sub_resource type="GradientTexture" id=175]
 gradient = SubResource( 171 )
 width = 128
 
 [sub_resource type="Curve" id=172]
 _data = [ Vector2( 0, 0.440909 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=95]
+[sub_resource type="CurveTexture" id=176]
 curve = SubResource( 172 )
 
 [sub_resource type="ParticlesMaterial" id=173]
@@ -341,9 +341,9 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 damping = 100.0
 scale = 3.0
-scale_curve = SubResource( 95 )
+scale_curve = SubResource( 176 )
 color = Color( 0.2, 0.45098, 0.639216, 1 )
-color_ramp = SubResource( 93 )
+color_ramp = SubResource( 175 )
 
 [sub_resource type="ParticlesMaterial" id=174]
 emission_shape = 5
@@ -360,15 +360,15 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 damping = 100.0
 scale = 3.0
-scale_curve = SubResource( 95 )
-color_ramp = SubResource( 93 )
+scale_curve = SubResource( 176 )
+color_ramp = SubResource( 175 )
 
-[sub_resource type="Gradient" id=77]
+[sub_resource type="Gradient" id=179]
 offsets = PoolRealArray( 0, 0.128492, 1 )
 colors = PoolColorArray( 0, 0.0156863, 0.188235, 0, 0, 0.0588235, 0.678431, 0.501961, 0, 0, 0, 0.768627 )
 
 [sub_resource type="GradientTexture2D" id=2]
-gradient = SubResource( 77 )
+gradient = SubResource( 179 )
 height = 384
 fill_to = Vector2( 0, 1 )
 repeat = 1
@@ -443,6 +443,19 @@ orbit_velocity_random = 0.0
 scale_random = 1.0
 color = Color( 1, 1, 1, 0.768627 )
 color_ramp = SubResource( 159 )
+
+[sub_resource type="Gradient" id=161]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=93]
+gradient = SubResource( 161 )
+width = 128
+
+[sub_resource type="Curve" id=162]
+_data = [ Vector2( 0, 0.440909 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=95]
+curve = SubResource( 162 )
 
 [sub_resource type="ParticlesMaterial" id=163]
 emission_shape = 5
@@ -597,18 +610,18 @@ animations = [ {
 "speed": 6.0
 } ]
 
-[sub_resource type="Gradient" id=161]
+[sub_resource type="Gradient" id=177]
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [sub_resource type="GradientTexture" id=168]
-gradient = SubResource( 161 )
+gradient = SubResource( 177 )
 width = 128
 
-[sub_resource type="Curve" id=162]
+[sub_resource type="Curve" id=178]
 _data = [ Vector2( 0, 0.440909 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=169]
-curve = SubResource( 162 )
+curve = SubResource( 178 )
 
 [sub_resource type="ParticlesMaterial" id=165]
 emission_shape = 5
@@ -1750,6 +1763,7 @@ autowrap = true
 
 [node name="WaterBody2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( -128, 0 )
+scroll_speed = 2560
 
 [node name="Splash" type="Node2D" parent="WaterBody2D"]
 position = Vector2( 248, -20 )

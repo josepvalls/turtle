@@ -131,14 +131,13 @@ custom_fonts/font = SubResource( 1 )
 text = "Leaderboard"
 
 [node name="Label4" type="Label" parent="CanvasLayer"]
-margin_left = 336.0
+margin_left = 224.0
 margin_top = 408.0
 margin_right = 616.0
 margin_bottom = 456.0
 custom_colors/font_color = Color( 0.247059, 0.239216, 0.278431, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "A game by Josep Valls and Damian Smith
-Created for Craftpix Indie Jam #2-2025"
+text = "A game by Josep Valls and Damian Smith"
 align = 2
 valign = 2
 autowrap = true

@@ -50,3 +50,15 @@ func _load_entries_callback(res, callbacks):
 
 func _process(delta):
 	$ParallaxBackground.scroll_base_offset.x += -256*delta
+	check_springs()
+
+func check_springs(force=5):
+	for i in $WaterBody2D.springs:
+		var c := i.get_node("CollisionShape2D") as CollisionShape2D
+		var s := c.shape as RectangleShape2D
+		var r := Rect2(c.global_position-s.extents,s.extents*4)
+		#prints("checking", r, get_global_mouse_position())
+		if r.has_point(get_global_mouse_position()):
+			#prints("mouse in",i)
+			
+			i.velocity = force
