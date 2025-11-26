@@ -33,7 +33,7 @@
 [ext_resource path="res://sprites/craftpix/Swimming/3 SteamMan/Swim.png" type="Texture" id=31]
 [ext_resource path="res://sprites/craftpix/Fishing/Fisherman_fish.png" type="Texture" id=32]
 [ext_resource path="res://prefabs/EnemyArea2D.gd" type="Script" id=33]
-[ext_resource path="res://sprites/craftpix/fishline.png" type="Texture" id=34]
+[ext_resource path="res://sprites/fishline.png" type="Texture" id=34]
 [ext_resource path="res://sprites/craftpix/craftpix-net-153409-free-seaport-tileset-32x32-pixel-art-for-platformer/3 Objects/1 Cargos/2.png" type="Texture" id=35]
 [ext_resource path="res://sprites/craftpix/craftpix-net-846754-free-green-zone-tileset-pixel-art/3 Objects/Stones/1.png" type="Texture" id=36]
 [ext_resource path="res://sprites/craftpix/Fishing/GraveRobber_fish.png" type="Texture" id=37]

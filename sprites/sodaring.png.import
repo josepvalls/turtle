@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sodaring2.png-74087181136f2899a05aa42fb16f5348.stex"
+path="res://.import/sodaring.png-e3540bd42d9c045e7f0133363c79ad05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix/sodaring2.png"
-dest_files=[ "res://.import/sodaring2.png-74087181136f2899a05aa42fb16f5348.stex" ]
+source_file="res://sprites/sodaring.png"
+dest_files=[ "res://.import/sodaring.png-e3540bd42d9c045e7f0133363c79ad05.stex" ]
 
 [params]
 

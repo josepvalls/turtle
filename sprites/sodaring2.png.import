@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bird2.png-465ca099d59d7db445792b8ca9a7be2d.stex"
+path="res://.import/sodaring2.png-41a2ad18934e47596c76e0e2032b52d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Bird2.png"
-dest_files=[ "res://.import/Bird2.png-465ca099d59d7db445792b8ca9a7be2d.stex" ]
+source_file="res://sprites/sodaring2.png"
+dest_files=[ "res://.import/sodaring2.png-41a2ad18934e47596c76e0e2032b52d7.stex" ]
 
 [params]
 
@@ -20,16 +20,16 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

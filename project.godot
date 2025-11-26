@@ -183,7 +183,7 @@ GameManager="*res://scripts/GameManager.gd"
 
 [display]
 
-window/size/width=640
+window/size/width=720
 window/size/height=480
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_width"

@@ -9,24 +9,24 @@
 [ext_resource path="res://sprites/craftpix/craftpix-net-115897-free-exclusion-zone-tileset-pixel-art/3 Objects/Grass/9.png" type="Texture" id=7]
 [ext_resource path="res://sprites/craftpix/craftpix-net-115897-free-exclusion-zone-tileset-pixel-art/3 Objects/Grass/16.png" type="Texture" id=8]
 [ext_resource path="res://scenes/gameplay/Splash.gd" type="Script" id=9]
-[ext_resource path="res://sprites/craftpix/sodaring.png" type="Texture" id=10]
+[ext_resource path="res://sprites/sodaring.png" type="Texture" id=10]
 [ext_resource path="res://sprites/craftpix/Rocket_Effect_02.png" type="Texture" id=11]
 [ext_resource path="res://sprites/craftpix/craftpix-net-115897-free-exclusion-zone-tileset-pixel-art/3 Objects/Grass/15.png" type="Texture" id=12]
-[ext_resource path="res://sprites/craftpix/beer.png" type="Texture" id=14]
+[ext_resource path="res://sprites/beer.png" type="Texture" id=14]
 [ext_resource path="res://sprites/craftpix/wheel.png" type="Texture" id=15]
 [ext_resource path="res://sprites/craftpix/craftpix-net-314143-free-industrial-zone-tileset-pixel-art/4 Animated objects/Transporter.png" type="Texture" id=19]
 [ext_resource path="res://sprites/craftpix/craftpix-net-111332-free-factory-pixel-art-32x32-tileset-for-cyberpunk/3 Objects/Barrel/4.png" type="Texture" id=20]
 [ext_resource path="res://sprites/craftpix/craftpix-net-153409-free-seaport-tileset-32x32-pixel-art-for-platformer/3 Objects/4 Overhead crane/Overhead-crane.png" type="Texture" id=21]
 [ext_resource path="res://sprites/craftpix/craftpix-net-115897-free-exclusion-zone-tileset-pixel-art/3 Objects/Grass/14.png" type="Texture" id=22]
-[ext_resource path="res://sprites/craftpix/sodaring2.png" type="Texture" id=24]
+[ext_resource path="res://sprites/sodaring2.png" type="Texture" id=24]
 [ext_resource path="res://sprites/craftpix/craftpix-net-111332-free-factory-pixel-art-32x32-tileset-for-cyberpunk/3 Objects/Barrel/3.png" type="Texture" id=25]
 [ext_resource path="res://sprites/craftpix/craftpix-net-314143-free-industrial-zone-tileset-pixel-art/3 Objects/Mop.png" type="Texture" id=26]
 [ext_resource path="res://sprites/craftpix/craftpix-net-111332-free-factory-pixel-art-32x32-tileset-for-cyberpunk/3 Objects/Barrel/2.png" type="Texture" id=27]
 [ext_resource path="res://sprites/craftpix/craftpix-net-314143-free-industrial-zone-tileset-pixel-art/1 Tiles/IndustrialTile_15.png" type="Texture" id=28]
-[ext_resource path="res://sprites/craftpix/soda.png" type="Texture" id=29]
+[ext_resource path="res://sprites/soda.png" type="Texture" id=29]
 [ext_resource path="res://sprites/craftpix/craftpix-net-111332-free-factory-pixel-art-32x32-tileset-for-cyberpunk/4 Animated objects/Saw.png" type="Texture" id=31]
 [ext_resource path="res://sprites/craftpix/craftpix-net-115897-free-exclusion-zone-tileset-pixel-art/1 Tiles/Tileset.png" type="Texture" id=32]
-[ext_resource path="res://sprites/craftpix/fishline.png" type="Texture" id=33]
+[ext_resource path="res://sprites/fishline.png" type="Texture" id=33]
 [ext_resource path="res://sprites/craftpix/craftpix-net-153409-free-seaport-tileset-32x32-pixel-art-for-platformer/3 Objects/1 Cargos/15.png" type="Texture" id=34]
 [ext_resource path="res://sprites/craftpix/craftpix-net-111332-free-factory-pixel-art-32x32-tileset-for-cyberpunk/1 Tiles/Tileset.png" type="Texture" id=35]
 [ext_resource path="res://sprites/craftpix/craftpix-net-800891-octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Death.png" type="Texture" id=36]
@@ -2267,7 +2267,7 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
 margin_left = 16.0
 margin_top = 16.0
-margin_right = 624.0
+margin_right = 704.0
 margin_bottom = 464.0
 __meta__ = {
 "_edit_lock_": true

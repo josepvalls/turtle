@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fishline.png-947ea135da98aa60f69dd1a44303fe20.stex"
+path="res://.import/Bird1.png-c79b38515ed9362f7798cf79f6e0d2d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix/fishline.png"
-dest_files=[ "res://.import/fishline.png-947ea135da98aa60f69dd1a44303fe20.stex" ]
+source_file="res://sprites/craftpix/Bird1.png"
+dest_files=[ "res://.import/Bird1.png-c79b38515ed9362f7798cf79f6e0d2d2.stex" ]
 
 [params]
 
@@ -19,17 +19,17 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
-flags/filter=false
+flags/repeat=0
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

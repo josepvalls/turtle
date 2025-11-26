@@ -21,7 +21,7 @@
 [ext_resource path="res://sprites/craftpix/craftpix-net-730561-free-guns-for-cyberpunk-characters-pixel-art/2 Guns/6_2.png" type="Texture" id=19]
 [ext_resource path="res://sprites/craftpix/craftpix-net-800891-octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Attack.png" type="Texture" id=20]
 [ext_resource path="res://sprites/craftpix/craftpix-net-846754-free-green-zone-tileset-pixel-art/3 Objects/Stones/4.png" type="Texture" id=21]
-[ext_resource path="res://sprites/craftpix/fishline.png" type="Texture" id=22]
+[ext_resource path="res://sprites/fishline.png" type="Texture" id=22]
 [ext_resource path="res://sprites/craftpix/craftpix-net-153409-free-seaport-tileset-32x32-pixel-art-for-platformer/3 Objects/1 Cargos/15.png" type="Texture" id=23]
 [ext_resource path="res://sprites/craftpix/water-surface.png" type="Texture" id=24]
 [ext_resource path="res://sprites/Circle Filled - Mini.png" type="Texture" id=25]
