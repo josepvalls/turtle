@@ -9,7 +9,7 @@
 [ext_resource path="res://fonts/ShantellSans-ExtraBoldItalic.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://sprites/craftpix/craftpix-net-153409-free-seaport-tileset-32x32-pixel-art-for-platformer/Overlay_illumination.png" type="Texture" id=8]
 [ext_resource path="res://scenes/gameplay/level12.gd" type="Script" id=9]
-[ext_resource path="res://sprites/turtle-outline.png" type="Texture" id=10]
+[ext_resource path="res://sprites/jvalls/turtle-outline.png" type="Texture" id=10]
 [ext_resource path="res://scripts/FancyGradient.gd" type="Script" id=11]
 [ext_resource path="res://sprites/craftpix/craftpix-net-153409-free-seaport-tileset-32x32-pixel-art-for-platformer/1 Tiles/WaterTiles.png" type="Texture" id=12]
 [ext_resource path="res://sprites/craftpix/craftpix-net-724983-ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/1.png" type="Texture" id=13]

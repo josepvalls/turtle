@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/soda.png-b590e0d91d49390006086d0b42c3707a.stex"
+path="res://.import/soda.png-4627819ecdc6c65fce94024e242c98f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/soda.png"
-dest_files=[ "res://.import/soda.png-b590e0d91d49390006086d0b42c3707a.stex" ]
+source_file="res://sprites/jvalls/soda.png"
+dest_files=[ "res://.import/soda.png-4627819ecdc6c65fce94024e242c98f1.stex" ]
 
 [params]
 

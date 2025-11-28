@@ -3,8 +3,8 @@
 [ext_resource path="res://prefabs/Projectile.gd" type="Script" id=2]
 [ext_resource path="res://prefabs/ProjectileArea2D.gd" type="Script" id=3]
 [ext_resource path="res://sprites/craftpix/craftpix-net-730561-free-guns-for-cyberpunk-characters-pixel-art/5 Bullets/6.png" type="Texture" id=5]
-[ext_resource path="res://sprites/shapes/hex-circle-blurry-small.png" type="Texture" id=6]
-[ext_resource path="res://sprites/circle.png" type="Texture" id=7]
+[ext_resource path="res://sprites/jvalls/hex-circle-blurry-small.png" type="Texture" id=6]
+[ext_resource path="res://sprites/jvalls/circle.png" type="Texture" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 4.0

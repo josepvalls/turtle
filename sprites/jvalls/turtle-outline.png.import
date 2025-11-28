@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fishline.png-35ed4cba162a2912e518e86f4c4c01f0.stex"
+path="res://.import/turtle-outline.png-4178e3f6a2db0109356fbb1ced43250c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/fishline.png"
-dest_files=[ "res://.import/fishline.png-35ed4cba162a2912e518e86f4c4c01f0.stex" ]
+source_file="res://sprites/jvalls/turtle-outline.png"
+dest_files=[ "res://.import/turtle-outline.png-4178e3f6a2db0109356fbb1ced43250c.stex" ]
 
 [params]
 
@@ -19,17 +19,17 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
-flags/filter=false
+flags/repeat=0
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
